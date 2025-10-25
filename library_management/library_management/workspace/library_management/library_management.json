@@ -1,0 +1,46 @@
+{
+  "doctype": "Workspace",
+  "name": "Library Management",
+  "public": 1,
+  "for_user": "",
+  "parent_page": "",
+  "title": "Library Management",
+  "label": "Library Management",
+  "module": "Library Management",
+  "icon": "book",
+  "indicator_color": "red",
+  "is_hidden": 0,
+  "hide_custom": 0,
+  "is_default": 0,
+  "onboardings": [],
+  "content": [],
+  "custom_blocks": [
+    {
+      "type": "Link",
+      "label": "Library Doctypes",
+      "links": [
+        {
+          "label": "Books",
+          "type": "DocType",
+          "name": "Book"
+        },
+        {
+          "label": "Library Members",
+          "type": "DocType",
+          "name": "Library Member"
+        },
+        {
+          "label": "Library Transactions",
+          "type": "DocType",
+          "name": "Library Transaction"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "shortcuts": [],
+  "creation": "2025-10-25 00:00:00",
+  "modified": "2025-10-25 00:00:00",
+  "modified_by": "Administrator",
+  "owner": "Administrator"
+}

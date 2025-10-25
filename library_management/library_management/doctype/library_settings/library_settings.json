@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2025-01-01 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_period",
+  "max_books",
+  "fine_per_day"
+ ],
+ "fields": [
+  {
+   "default": "14",
+   "description": "Default loan period in days",
+   "fieldname": "loan_period",
+   "fieldtype": "Int",
+   "label": "Loan Period (Days)",
+   "reqd": 1
+  },
+  {
+   "default": "3",
+   "description": "Maximum number of books a member can issue at once",
+   "fieldname": "max_books",
+   "fieldtype": "Int",
+   "label": "Maximum Books Per Member",
+   "reqd": 1
+  },
+  {
+   "default": "1.0",
+   "description": "Fine amount per day for overdue books",
+   "fieldname": "fine_per_day",
+   "fieldtype": "Currency",
+   "label": "Fine Per Day"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-01 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

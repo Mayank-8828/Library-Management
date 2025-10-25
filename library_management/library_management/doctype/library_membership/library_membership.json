@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-01 10:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "library_member",
+  "full_name",
+  "column_break_3",
+  "from_date",
+  "to_date",
+  "paid",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "LMS-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LMS-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Member",
+   "options": "Library Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "library_member.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "default": 0,
+   "fieldname": "paid",
+   "fieldtype": "Check",
+   "label": "Paid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Membership",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-01 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Membership",
+ "naming_rule": "By Naming Series",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1
+  }
+ ],
+ "search_fields": "library_member,full_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
+}
